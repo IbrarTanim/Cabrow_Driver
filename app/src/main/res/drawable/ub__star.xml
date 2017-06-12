@@ -3,7 +3,7 @@
 
     <item
         android:id="@android:id/background"
-        android:drawable="@drawable/blank_star"/>
+        android:drawable="@drawable/empty_star"/>
     <item
         android:id="@android:id/progress"
         android:drawable="@drawable/fill_star"/>

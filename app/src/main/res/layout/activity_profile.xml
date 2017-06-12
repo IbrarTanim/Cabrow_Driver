@@ -1,8 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white" >
+    android:layout_height="match_parent" >
 
     <RelativeLayout
         android:id="@+id/relTop"
@@ -16,15 +15,15 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true" >
 
-            <com.mikhaellopez.circularimageview.CircleImageView
+            <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/ivProfileProfile"
                 android:layout_width="@dimen/dimen_profile_image_width"
                 android:layout_height="@dimen/dimen_profile_image_height"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="@dimen/dimen_profile_margin_left"
-                android:src="@drawable/default_user"
+                android:src="@drawable/user"
                 app:border_color="@color/white"
-                app:border_width="2dp" />
+                app:border_width="@dimen/dimen_history_padding" />
 
             <include
                 android:layout_width="wrap_content"
@@ -41,7 +40,7 @@
             android:layout_toRightOf="@id/relProfileImage"
             android:orientation="vertical" >
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
                 android:id="@+id/etProfileFName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,7 +52,7 @@
                 android:textColorHint="@color/white"
                 android:textSize="@dimen/dimen_profile_textsize" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
                 android:id="@+id/etProfileLName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,24 +75,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/dimen_profile_margin_left"
+            android:layout_marginBottom="@dimen/activity_margin_feedback"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:orientation="vertical"
             android:paddingBottom="@dimen/dimen_profile_padding_bottom"
-            android:paddingLeft="@dimen/dimen_profile_padding"
-            android:paddingRight="@dimen/dimen_profile_padding"
+            android:paddingRight="@dimen/activity_margin_feedback"
             android:paddingTop="@dimen/dimen_profile_padding" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:background="@drawable/bg_edittext" >
 
-                <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+                <com.automated.taxinow.driver.widget.MyFontEdittextView
                     android:id="@+id/etProfileEmail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:layout_weight="1"
                     android:background="@null"
                     android:hint="@string/text_email"
@@ -103,59 +102,60 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@drawable/color" />
 
-                <ImageView
+                <com.automated.taxinow.driver.widget.MyFontButton
                     android:id="@+id/btnProfileEmailInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:background="@null"
-                    android:src="@drawable/info" />
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/activity_margin_register"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:background="@drawable/info"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
             </LinearLayout>
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
-                android:id="@+id/etCurrentPassword"
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
+                android:id="@+id/etProfileCurrentPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_margin_feedback"
                 android:background="@drawable/bg_edittext"
                 android:ems="10"
-                android:hint="@string/text_pass_current"
+                android:hint="@string/text_current_pass"
                 android:inputType="textPassword"
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
-                android:id="@+id/etNewPassword"
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
+                android:id="@+id/etProfileNewPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:background="@drawable/bg_edittext"
                 android:ems="10"
-                android:hint="@string/text_pass_new"
+                android:hint="@string/text_new_pass"
                 android:inputType="textPassword"
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
-                android:id="@+id/etRetypePassword"
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
+                android:id="@+id/etProfileRetypePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:background="@drawable/bg_edittext"
                 android:ems="10"
-                android:hint="@string/text_pass_retype"
+                android:hint="@string/text_retype_pass"
                 android:inputType="textPassword"
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -163,7 +163,7 @@
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:orientation="horizontal" >
 
-                <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                <com.automated.taxinow.driver.widget.MyFontTextView
                     android:id="@+id/tvProfileCountryCode"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -172,7 +172,7 @@
                     android:singleLine="true"
                     android:visibility="gone" />
 
-                <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+                <com.automated.taxinow.driver.widget.MyFontEdittextView
                     android:id="@+id/etProfileNumber"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                     android:textColor="@drawable/color" />
             </LinearLayout>
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
                 android:id="@+id/etProfileAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -198,10 +198,9 @@
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
                 android:id="@+id/etProfileBio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -212,10 +211,9 @@
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontEdittextView
+            <com.automated.taxinow.driver.widget.MyFontEdittextView
                 android:id="@+id/etProfileZipCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -227,18 +225,81 @@
                 android:paddingLeft="@dimen/dimen_history_margin_left"
                 android:singleLine="true"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@drawable/color"
-                android:visibility="gone" />
+                android:textColor="@drawable/color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" >
+
+                <com.automated.taxinow.driver.widget.MyFontEdittextView
+                    android:id="@+id/etProfileModel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_client_image_margin_top"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/text_taxi_model"
+                    android:paddingLeft="@dimen/dimen_history_margin_left"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@drawable/color" />
+
+                <com.automated.taxinow.driver.widget.MyFontButton
+                    android:id="@+id/btnProfileModelInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/activity_margin_register"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:background="@drawable/info"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_margin_feedback"
+                android:background="@drawable/bg_edittext" >
+
+                <com.automated.taxinow.driver.widget.MyFontEdittextView
+                    android:id="@+id/etProfileVehicleNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin_register"
+                    android:layout_marginTop="@dimen/activity_margin_mainscreen"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/text_taxi_number"
+                    android:paddingLeft="@dimen/dimen_history_margin_left"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@drawable/color" />
+
+                <com.automated.taxinow.driver.widget.MyFontButton
+                    android:id="@+id/btnProfileVehicleNoInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/activity_margin_register"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:background="@drawable/info"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
+            </LinearLayout>
 .
         </LinearLayout>
     </ScrollView>
 
-    <com.cabrow.cabrowpassenger.customui.MyFontButton
+    <com.automated.taxinow.driver.widget.MyFontButton
         android:id="@+id/tvProfileSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/btn_pickup"
+        android:background="@drawable/btn_bottom"
         android:gravity="center"
         android:text="@string/text_submit"
         android:textAppearance="?android:attr/textAppearanceMedium"

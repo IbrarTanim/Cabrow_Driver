@@ -8,19 +8,20 @@
     android:paddingBottom="@dimen/activity_margin_register"
     android:paddingLeft="@dimen/dimen_history_image_padding"
     android:paddingRight="@dimen/dimen_history_image_padding"
-    android:paddingTop="@dimen/activity_margin_register">
+    android:paddingTop="@dimen/activity_margin_register"
+    tools:context=".adapter.HistoryAdapter" >
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <com.mikhaellopez.circularimageview.CircleImageView
+        <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/ivHistoryIcon"
             android:layout_width="@dimen/dimen_history_image_width"
             android:layout_height="@dimen/dimen_history_image_height"
             android:layout_centerInParent="true"
             android:layout_marginLeft="@dimen/dimen_history_margin_left"
-            android:src="@drawable/default_user"
+            android:src="@drawable/user"
             app:border_color="@color/white"
             app:border_width="@dimen/dimen_history_padding" />
 
@@ -40,17 +41,15 @@
         android:gravity="center_vertical"
         android:orientation="vertical" >
 
-        <com.cabrow.cabrowpassenger.customui.MyFontHistoryTextView
+        <com.cabrow.driver.widget.MyFontTextViewBold
             android:id="@+id/tvHistoryName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimen_history_one"
             android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/color_app_gray"
-            android:textStyle="bold" />
+            android:textColor="@color/color_app_gray" />
 
-        <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+         <com.cabrow.driver.widget.MyFontTextViewTitle
             android:id="@+id/tvHistoryDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,13 +76,14 @@
         android:gravity="right|center_vertical"
         android:orientation="vertical" >
 
-        <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+        <com.cabrow.driver.widget.MyFontTextViewTitle
             android:id="@+id/tvHistoryCost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Large Text"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/color_text"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/history_text_size"
             android:textStyle="bold" />
     </LinearLayout>
 

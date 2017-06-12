@@ -19,13 +19,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/cover_image" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontPopUpTextView
+            <com.cabrow.driver.widget.MyFontTextViewDrawer
                 android:id="@+id/tvMenuName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_name_menu"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
                 android:text="@string/text_fname"
                 android:textColor="@color/white"
                 android:textSize="@dimen/feedback_text_size" />
@@ -34,16 +34,14 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:paddingLeft="@dimen/activity_vertical_margin"
-            android:paddingRight="@dimen/activity_vertical_margin" >
+            android:layout_centerInParent="true" >
 
-            <com.mikhaellopez.circularimageview.CircleImageView
+            <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/ivMenuProfile"
                 android:layout_width="@dimen/menu_img_width"
                 android:layout_height="@dimen/menu_img_height"
-                android:background="@android:color/transparent"
-                android:src="@drawable/default_user"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user"
                 app:border_color="@color/white"
                 app:border_width="2dp" />
 

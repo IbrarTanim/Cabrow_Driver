@@ -10,17 +10,11 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
-    </style>
 
-    <style name="AppTheme.FullScreen" parent="AppTheme">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-
-        <!-- <item name="android:editTextBackground">@drawable/ub__edit_text_holo_light</item> -->
         <!-- <item name="android:windowBackground">@color/ub__bg_white</item> -->
         <!-- <item name="android:windowContentOverlay">@drawable/ub__actionbar_shadow</item> -->
         <!-- <item name="android:progressBarStyleHorizontal">@style/Uber.Widget.ProgressBar</item> -->
@@ -55,13 +49,6 @@
     <style name="FadeDialogAnimation">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
-    </style>
-
-    <style name="CustomSeekBar" parent="android:Widget.SeekBar">
-        <item name="android:progressDrawable">@drawable/custom_seek_bar</item>
-        <item name="android:thumb">@drawable/taxi_pickup</item>
-        <item name="android:minHeight">@dimen/feedback_padding</item>
-        <item name="android:maxHeight">@dimen/dimen_history_margin_left</item>
     </style>
 
 </resources>

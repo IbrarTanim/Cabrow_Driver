@@ -6,8 +6,7 @@
         <attr name="posX" format="integer"></attr>
         <attr name="posY" format="integer"></attr>
     </declare-styleable>
-    <declare-styleable name="ScrimInsetsView">
-        <attr name="insetForeground" format="reference|color" />
-    </declare-styleable>
+   
+    
 
 </resources>

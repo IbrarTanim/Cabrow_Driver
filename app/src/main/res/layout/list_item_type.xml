@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:src="@drawable/ub__button_limo" />
+            android:src="@drawable/ic_launcher" />
 
         <ImageView
             android:id="@+id/ivSelectService"
@@ -29,7 +29,7 @@
             android:src="@drawable/selected_service" />
     </RelativeLayout>
 
-    <TextView
+    <com.cabrow.driver.widget.MyFontTextView
         android:id="@+id/tvType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

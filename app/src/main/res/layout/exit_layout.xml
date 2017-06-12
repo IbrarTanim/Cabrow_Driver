@@ -11,7 +11,7 @@
         android:background="@color/white"
         android:orientation="vertical" >
 
-        <com.cabrow.cabrowpassenger.customui.MyFontTextView
+        <com.cabrow.driver.widget.MyFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/nav_divider_line" />
 
-        <com.cabrow.cabrowpassenger.customui.MyFontTextView
+        <com.cabrow.driver.widget.MyFontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
@@ -40,27 +40,27 @@
             android:layout_marginTop="@dimen/activity_margin_mainscreen"
             android:orientation="horizontal" >
 
-            <com.cabrow.cabrowpassenger.customui.MyFontTextView
+            <com.cabrow.driver.widget.MyFontTextView
                 android:id="@+id/tvExitOk"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_margin_register"
                 android:layout_weight="1"
-                android:background="@drawable/bg_btn_small"
+                android:background="@drawable/button"
                 android:gravity="center"
-                android:text="@android:string/yes"
+                android:text="@string/text_exit_ok"
                 android:textColor="@color/white" />
 
-            <com.cabrow.cabrowpassenger.customui.MyFontTextView
+            <com.cabrow.driver.widget.MyFontTextView
                 android:id="@+id/tvExitCancel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_margin_register"
                 android:layout_marginRight="@dimen/activity_margin_register"
                 android:layout_weight="1"
-                android:background="@drawable/bg_btn_small"
+                android:background="@drawable/button"
                 android:gravity="center"
-                android:text="@string/text_cancel"
+                android:text="@string/text_exit_cancel"
                 android:textColor="@color/white" />
         </LinearLayout>
     </LinearLayout>

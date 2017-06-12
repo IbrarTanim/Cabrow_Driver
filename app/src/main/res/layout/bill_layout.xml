@@ -18,7 +18,7 @@
             android:background="@drawable/bg_bill"
             android:gravity="center_horizontal" >
 
-            <com.cabrow.cabrowpassenger.customui.MyFontTextView
+            <com.cabrow.driver.widget.MyFontTextViewTitle
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                     android:paddingLeft="@dimen/dimen_bill_padding_one"
                     android:paddingRight="@dimen/dimen_bill_padding_two" >
 
-                    <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvBasePriceText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -61,23 +61,23 @@
                         android:textSize="@dimen/dimen_invoice_baseprice"
                         android:textStyle="bold" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvBasePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="60.00"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
                 </LinearLayout>
 
@@ -103,7 +103,7 @@
                         android:gravity="center"
                         android:orientation="vertical" >
 
-                        <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                        <com.cabrow.driver.widget.MyFontTextViewTitle
                             android:id="@+id/tvDistCost"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                             android:textSize="@dimen/dimen_invoice_baseprice"
                             android:textStyle="bold" />
 
-                        <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                        <com.cabrow.driver.widget.MyFontTextViewTitle
                             android:id="@+id/tvBillDistancePerMile"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -123,23 +123,23 @@
                             android:textSize="@dimen/invoice_base_price_small" />
                     </LinearLayout>
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvDis1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="0"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
                 </LinearLayout>
 
@@ -165,7 +165,7 @@
                         android:gravity="center"
                         android:orientation="vertical" >
 
-                        <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                        <com.cabrow.driver.widget.MyFontTextViewTitle
                             android:id="@+id/tvTimeCost"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                             android:textSize="@dimen/dimen_invoice_baseprice"
                             android:textStyle="bold" />
 
-                        <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                        <com.cabrow.driver.widget.MyFontTextViewTitle
                             android:id="@+id/tvBillTimePerHour"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -185,23 +185,23 @@
                             android:textSize="@dimen/invoice_base_price_small" />
                     </LinearLayout>
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvTime1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="0"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
                 </LinearLayout>
 
@@ -219,7 +219,7 @@
                     android:paddingLeft="@dimen/dimen_bill_padding_one"
                     android:paddingRight="@dimen/dimen_bill_padding_two" >
 
-                    <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvReferralBonusText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -232,23 +232,23 @@
                         android:textSize="@dimen/dimen_invoice_baseprice"
                         android:textStyle="bold" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvReferralBonus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="0"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
                 </LinearLayout>
 
@@ -266,7 +266,7 @@
                     android:paddingLeft="@dimen/dimen_bill_padding_one"
                     android:paddingRight="@dimen/dimen_bill_padding_two" >
 
-                    <com.cabrow.cabrowpassenger.customui.MyFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvPromoBonusText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -279,23 +279,23 @@
                         android:textSize="@dimen/dimen_invoice_baseprice"
                         android:textStyle="bold" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvPromoBonus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="0"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/invoice_price_font" />
                 </LinearLayout>
 
@@ -339,22 +339,22 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/dimen_bill_margin_three"
                         android:gravity="center"
                         android:text="@string/payment_unit"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/dimen_bill_text" />
 
-                    <com.cabrow.cabrowpassenger.customui.MyTitleFontTextView
+                    <com.cabrow.driver.widget.MyFontTextViewTitle
                         android:id="@+id/tvTotal1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="60.00"
-                        android:textColor="@color/color_text"
+                        android:textColor="@color/color_blue"
                         android:textSize="@dimen/dimen_bill_text" />
                 </LinearLayout>
             </LinearLayout>
@@ -367,7 +367,7 @@
         android:layout_gravity="bottom|end"
         android:gravity="bottom" >
 
-        <com.cabrow.cabrowpassenger.customui.MyFontButton
+        <com.cabrow.driver.widget.MyFontTextViewTitle
             android:id="@+id/btnBillDialogClose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

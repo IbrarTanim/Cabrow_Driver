@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "883270961725",
+    "firebase_url": "https://cabrowpassenger.firebaseio.com",
+    "project_id": "cabrowpassenger",
+    "storage_bucket": "cabrowpassenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883270961725:android:a9c60b63724237d3",
+        "android_client_info": {
+          "package_name": "com.cabrow.cabrowpassenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883270961725-hndt9rrfr7rhlg8rj9rtogbslh5lfior.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE6SYaHpllXf9ohMp-gp4JsOc2umYcJEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
