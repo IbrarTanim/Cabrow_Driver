@@ -53,12 +53,9 @@
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
 
         <activity
             android:name=".activities.RegisterActivity"
@@ -66,21 +63,40 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
 
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activities.MenuDescActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
 
         <activity
-            android:name=".activities.MainDrawerActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan" >
+            android:name=".activities.HistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MapActivity"
+            android:screenOrientation="portrait" >
         </activity>
 
 
+        <activity
+            android:name=".activities.HelpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBUwnwp2cZxbttxIuhl_Uluh2s6NxNLT8w"/>
-
-
-
+            android:value="AIzaSyA55q5WO9RhRIU26i_IK9vp65RdxpGffOo"/>
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
 
 
@@ -102,56 +118,6 @@
             android:screenOrientation="portrait" />
 
 
-
-
-        <activity
-            android:name=".activities.UberMyThingActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".activities.UberAddPaymentActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".activities.ProfileActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" >
-        </activity>
-        <activity
-            android:name=".activities.MenuDescActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
-
-        <activity
-            android:name=".activities.UberViewPaymentActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
-
-        <activity
-            android:name=".activities.HistoryActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-
-        <activity
-            android:name=".activities.HelpActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-
-        <activity
-            android:name=".activities.TourListActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-
-        <activity
-            android:name=".activities.TourDetailsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".activities.BookingActivity"
-            android:screenOrientation="portrait" >
-        </activity>
 
 
         <!--  <activity android:name="com.braintreepayments.api.dropin.BraintreePaymentActivity" />

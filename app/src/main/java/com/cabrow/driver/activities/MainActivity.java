@@ -2,8 +2,6 @@ package com.cabrow.driver.activities;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -15,10 +13,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.cabrow.driver.R;
-import com.cabrow.driver.gcm.CommonUtilities;
-import com.cabrow.driver.gcm.GCMRegisterHendler;
+import com.cabrow.driver.firebase.MyFirebaseInstanceIDService;
 import com.cabrow.driver.utills.AndyUtils;
-import com.cabrow.driver.utills.AppLog;
 import com.cabrow.driver.utills.PreferenceHelper;
 import com.cabrow.driver.widget.MyFontTextView;
 
@@ -52,8 +48,14 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		findViewById(R.id.btnFirstSignIn).setOnClickListener(this);
 		findViewById(R.id.btnFirstRegister).setOnClickListener(this);
+		String deviceToken = preferenceHelper.getDeviceToken();
+		if (TextUtils.isEmpty(deviceToken)) {
+			Intent intent = new Intent(this, MyFirebaseInstanceIDService.class);
+			startService(intent);
+			return;
 
-		if (TextUtils.isEmpty(new PreferenceHelper(MainActivity.this)
+		}
+	/*	if (TextUtils.isEmpty(new PreferenceHelper(MainActivity.this)
 				.getDeviceToken())) {
 			isRecieverRegister = true;
 			registerGcmReceiver(mHandleMessageReceiver);
@@ -61,11 +63,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 			AppLog.Log(TAG, "device already registerd with :"
 					+ new PreferenceHelper(MainActivity.this).getDeviceToken());
-		}
+		}*/
 		// TODO Auto-generated method stub
 	}
 
-	private BroadcastReceiver mHandleMessageReceiver = new BroadcastReceiver() {
+	/*private BroadcastReceiver mHandleMessageReceiver = new BroadcastReceiver() {
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
@@ -93,8 +95,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	public void registerGcmReceiver(BroadcastReceiver mHandleMessageReceiver) {
 		if (mHandleMessageReceiver != null) {
-			AndyUtils.showCustomProgressDialog(this, "", getResources()
-					.getString(R.string.progress_loading), false);
+//			AndyUtils.showCustomProgressDialog(this, "", getResources()
+//					.getString(R.string.progress_loading), false);
 			new GCMRegisterHendler(MainActivity.this, mHandleMessageReceiver);
 
 		}
@@ -109,7 +111,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		}
 
-	}
+	}*/
 
 	@Override
 	public void onClick(View v) {
@@ -131,6 +133,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		case R.id.btnFirstSignIn:
 
+			Toast.makeText(this, "Rokan Test", Toast.LENGTH_SHORT).show();
 			startRegisterActivity.putExtra("isSignin", true);
 
 			break;
@@ -149,7 +152,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		super.onDestroy();
 		if (isRecieverRegister) {
-			unregisterGcmReceiver(mHandleMessageReceiver);
+//			unregisterGcmReceiver(mHandleMessageReceiver);
 			isRecieverRegister = false;
 		}
 

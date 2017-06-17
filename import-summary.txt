@@ -14,10 +14,11 @@ Moved Files:
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => library_pinnlistivew\src\main\AndroidManifest.xml
-* assets\ => library_pinnlistivew\src\main\assets\
-* res\ => library_pinnlistivew\src\main\res\
-* src\ => library_pinnlistivew\src\main\java\
+* AndroidManifest.xml => circularImageView\src\main\AndroidManifest.xml
+* assets\ => circularImageView\src\main\assets
+* lint.xml => circularImageView\lint.xml
+* res\ => circularImageView\src\main\res\
+* src\ => circularImageView\src\main\java\
 
 Next Steps:
 -----------

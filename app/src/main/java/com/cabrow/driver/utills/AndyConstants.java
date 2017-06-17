@@ -58,7 +58,8 @@ public class AndyConstants {
 
 		// Local server for Taxi Now Makeover version
 		//private static final String HOST_URL = "http://laudore.com/";
-		private static final String HOST_URL = "http://amigatesting.com/android/newtaxi/public/";
+		private static final String HOST_URL = "http://cabrow.com/public/";
+		//private static final String HOST_URL = "http://cabrow.com/";
 		//private static final String HOST_URL = "http://taxi.jayzay.com/";
 
 

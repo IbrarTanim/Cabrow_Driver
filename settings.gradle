@@ -1,2 +1,3 @@
-include ':app', ':CircularImageView_Client'
+include ':app'
 include ':cropLibrary'
+include ':circularImageView'
