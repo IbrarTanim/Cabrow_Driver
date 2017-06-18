@@ -2,7 +2,7 @@ package com.cabrow.driver.utills;
 
 public class AndyConstants {
 
-	public static final String DIRECTION_API_KEY = "AIzaSyDLQZQAARIyVD75Cd3Ri-DX93nHoWPhFxI";
+	public static final String DIRECTION_API_KEY = "AIzaSyCfcK2eGSwWJ0DqBYVHkO2CQwNnGhlIY20I";
 	/*public static final String DIRECTION_API_KEY = "AIzaSyDDkGuI3VGsmIIk8jsxgGOKFFtKuN5MD4A"; new*/
 	
 	// fragment constants

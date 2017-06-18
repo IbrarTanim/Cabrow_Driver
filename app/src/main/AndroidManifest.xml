@@ -96,7 +96,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyA55q5WO9RhRIU26i_IK9vp65RdxpGffOo"/>
+            android:value="AIzaSyCfcK2eGSwWJ0DqBYVHkO2CQwNnGhlIY20"/>
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
 
 
