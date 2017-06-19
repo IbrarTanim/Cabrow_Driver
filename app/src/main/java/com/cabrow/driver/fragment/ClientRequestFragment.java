@@ -43,7 +43,6 @@ import com.cabrow.driver.utills.AndyUtils;
 import com.cabrow.driver.utills.AppLog;
 import com.cabrow.driver.widget.MyFontButton;
 import com.cabrow.driver.widget.MyFontTextView;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -142,8 +141,7 @@ public class ClientRequestFragment extends BaseMapFragment implements
 
 		btnClientAccept.setOnClickListener(this);
 		btnClientReject.setOnClickListener(this);
-		clientRequestView.findViewById(R.id.btnMyLocation).setOnClickListener(
-				this);
+		//clientRequestView.findViewById(R.id.btnMyLocation).setOnClickListener(this);
 		btnGoOffline = (Button) clientRequestView.findViewById(R.id.btnOffline);
 		relMap = (RelativeLayout) clientRequestView.findViewById(R.id.relMap);
 		linearOffline.setVisibility(View.GONE);
@@ -296,19 +294,20 @@ public class ClientRequestFragment extends BaseMapFragment implements
 			respondRequest(0);
 			soundPool.stop(soundid);
 			break;
-		case R.id.btnMyLocation:
+		// rokan case R.id.btnMyLocation:
 			// Location loc = mMap.getMyLocation();
 			// if (loc != null) {
 			// LatLng latLang = new LatLng(loc.getLatitude(),
 			// loc.getLongitude());
 			// mMap.animateCamera(CameraUpdateFactory.newLatLng(latLang));
 			// }
-			LatLng latLng = new LatLng(location.getLatitude(),
+			//rokan
+			/*LatLng latLng = new LatLng(location.getLatitude(),
 					location.getLongitude());
 			CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(
 					latLng, 18);
 			mMap.animateCamera(cameraUpdate);
-			break;
+			break;*/
 		case R.id.btnOffline:
 			mapActivity.clearAll();
 			changeState();

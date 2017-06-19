@@ -26,7 +26,7 @@
             android:progress="10"
             android:progressDrawable="@drawable/customprogress" />
 
-        <com.automated.taxinow.driver.widget.MyFontTextView
+        <com.cabrow.driver.widget.MyFontTextView
             android:id="@+id/tvClentReqRemainTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

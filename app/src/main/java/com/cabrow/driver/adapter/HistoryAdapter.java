@@ -124,8 +124,8 @@ public class HistoryAdapter extends BaseAdapter
 				holder = new ViewHolder();
 				holder.tvName = (MyFontTextViewBold) convertView
 						.findViewById(R.id.tvHistoryName);
-				// holder.tvBio = (MyFontTextView) convertView
-				// .findViewById(R.id.tvHistoryBio);
+				 holder.tvBio = (MyFontTextView) convertView
+				 .findViewById(R.id.tvHistoryBio);
 				holder.tvDate = (MyFontTextViewTitle) convertView
 						.findViewById(R.id.tvHistoryDate);
 				holder.tvCost = (MyFontTextViewTitle) convertView
@@ -161,12 +161,12 @@ public class HistoryAdapter extends BaseAdapter
 		switch (type) {
 		case TYPE_ITEM:
 			aQuery = new AQuery(convertView);
-			// Collections.sort(list.get(position).getDate(), myComparator);
+			 //Collections.sort(list.get(position).getDate(), myComparator);
 			History history = list.get(position);
 
 			holder.tvName.setText(history.getFirstName() + " "
 					+ history.getLastName());
-			// holder.tvBio.setText(history.getBio() + "");
+			 holder.tvBio.setText(history.getBio() + "");
 			holder.tvDate.setText(formatTime(history.getDate()));
 			holder.tvCost.setText(activity.getString(R.string.payment_unit)+history.getTotal());
 			aQuery.id(holder.ivIcon).progress(R.id.pBar)

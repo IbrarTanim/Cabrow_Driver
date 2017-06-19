@@ -6,14 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 import android.view.View;
-
+import com.cabrow.driver.fragment.LoginFragment;
 import com.android.volley.VolleyError;
 import com.cabrow.driver.R;
 import com.cabrow.driver.fragment.RegisterFragment;
 import com.cabrow.driver.gcm.GCMRegisterHendler;
 import com.cabrow.driver.utills.AndyConstants;
 import com.cabrow.driver.utills.AndyUtils;
-import com.facebook.login.LoginFragment;
 
 
 /**

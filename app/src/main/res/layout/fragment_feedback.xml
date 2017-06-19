@@ -114,7 +114,7 @@
         android:layout_height="match_parent"
         android:gravity="bottom" >
 
-        <!-- <com.automated.taxinow.driver.widget.MyFontButton -->
+        <!-- <com.cabrow.driver.widget.MyFontButton -->
         <!-- android:id="@+id/tvFeedbackSkip" -->
         <!-- android:layout_width="0dp" -->
         <!-- android:layout_height="wrap_content" -->

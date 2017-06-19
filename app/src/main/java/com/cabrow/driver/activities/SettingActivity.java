@@ -5,7 +5,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.Switch;
 
 import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
@@ -29,7 +28,7 @@ import java.util.HashMap;
  */
 public class SettingActivity extends ActionBarBaseActivitiy implements
 		OnCheckedChangeListener, AsyncTaskCompleteListener {
-	private Switch switchSetting, switchSound;
+	//private Switch switchSetting, switchSound;
 	private PreferenceHelper preferenceHelper;
 	private ParseContent parseContent;
 	private RequestQueue requestQueue;
@@ -43,7 +42,7 @@ public class SettingActivity extends ActionBarBaseActivitiy implements
 		requestQueue = Volley.newRequestQueue(this);
 		//Rokan
 		//switchSetting = (Switch) findViewById(R.id.switchAvaibility);
-		switchSetting.setVisibility(View.GONE);
+		//switchSetting.setVisibility(View.GONE);
 		//Rokan
 		//switchSound = (Switch) findViewById(R.id.switchSound);
 		setActionBarTitle(getString(R.string.text_setting));
@@ -53,7 +52,7 @@ public class SettingActivity extends ActionBarBaseActivitiy implements
 		// getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		// getSupportActionBar().setHomeButtonEnabled(true);
 //		switchSound.setChecked(preferenceHelper.getSoundAvailability());
-  	switchSound.setOnCheckedChangeListener(this);
+  	//switchSound.setOnCheckedChangeListener(this);
 
 //		if (preferenceHelper.getDriverOffline()) {
 //
@@ -62,11 +61,11 @@ public class SettingActivity extends ActionBarBaseActivitiy implements
 //
 //			checkState();
 //		}
-		if (preferenceHelper.getSoundAvailability()) {
+		/*if (preferenceHelper.getSoundAvailability()) {
 			switchSound.setChecked(true);
 		} else {
 			switchSound.setChecked(false);
-		}
+		}*/
 	}
 
 	private void checkState() {
@@ -164,14 +163,14 @@ public class SettingActivity extends ActionBarBaseActivitiy implements
 			}
 			AppLog.Log("TAG", "toggle state:" + response);
 			if (parseContent.parseAvaibilty(response)) {
-				switchSetting.setOnCheckedChangeListener(null);
-				switchSetting.setChecked(true);
+				//switchSetting.setOnCheckedChangeListener(null);
+				//switchSetting.setChecked(true);
 
 			} else {
-				switchSetting.setOnCheckedChangeListener(null);
-				switchSetting.setChecked(false);
+				//switchSetting.setOnCheckedChangeListener(null);
+				//switchSetting.setChecked(false);
 			}
-			switchSetting.setOnCheckedChangeListener(this);
+			//switchSetting.setOnCheckedChangeListener(this);
 			break;
 		default:
 			break;

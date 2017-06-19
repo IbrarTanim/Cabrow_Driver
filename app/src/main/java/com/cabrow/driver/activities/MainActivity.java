@@ -133,7 +133,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		case R.id.btnFirstSignIn:
 
-			Toast.makeText(this, "Rokan Test", Toast.LENGTH_SHORT).show();
 			startRegisterActivity.putExtra("isSignin", true);
 
 			break;

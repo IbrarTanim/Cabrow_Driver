@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.cabrow.driver.R;
 import com.cabrow.driver.base.BaseRegisterFragment;
+import com.cabrow.driver.firebase.MyFirebaseInstanceIDService;
 import com.cabrow.driver.gcm.CommonUtilities;
 import com.cabrow.driver.utills.AndyConstants;
 import com.cabrow.driver.utills.AndyUtils;
@@ -75,16 +76,24 @@ public class UberMainFragment extends BaseRegisterFragment implements
 	public void onActivityCreated(Bundle savedInstanceState) {
 		registerActivity.setActionBarTitle(getResources().getString(
 				R.string.app_name));
+		String deviceToken = new PreferenceHelper(registerActivity).getDeviceToken();
+		if (TextUtils.isEmpty(deviceToken)) {
+			Intent intent = new Intent(registerActivity, MyFirebaseInstanceIDService.class);
+			registerActivity.startService(intent);
+			return;
 
-		if (TextUtils.isEmpty(new PreferenceHelper(registerActivity)
+		}
+
+	/*	if (TextUtils.isEmpty(new PreferenceHelper(registerActivity)
 				.getDeviceToken())) {
+			jhhh
 			isRecieverRegister = true;
 			registerActivity.registerGcmReceiver(mHandleMessageReceiver);
 		} else {
 
 			AppLog.Log(TAG, "device already registerd with :"
 					+ new PreferenceHelper(registerActivity).getDeviceToken());
-		}
+		}*/
 
 		// topToBottomAnimation = AnimationUtils.loadAnimation(registerActivity,
 		// R.anim.top_bottom);
